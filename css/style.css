@@ -1,0 +1,156 @@
+/*********საზოგადო***********/
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+/**********ფონტი***********/
+@font-face {
+  font-family: 'Hannari';
+  src: url('../fonts/Hannari-Regular.ttf') ;
+}
+/**********საწყისები***********/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+  background: #d0cdcd;
+  margin: 0;
+  font-family: 'Hannari', sans-serif;
+ padding-bottom: 50px;
+  
+}
+/**********I-icon***********/
+ .fa-bolt{
+  color:#FF55551A ;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.fa-brain{
+  color:#FFB21E1A ;
+  font-size: 15px;
+}
+.fa-comment{
+  color:#00FF001A ;
+  font-size: 15px;
+}
+.fa-eye{
+  color:#A700FF1A ;
+  font-size: 15px;
+}
+
+/**********ბოქსი***********/
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background-color: white;
+  margin-top: 30px;
+
+}
+
+.result {
+  background-color: rgb(96,62,252);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+ border-radius: 20px;
+  
+}
+.score-circle {
+  background: radial-gradient(circle, rgb(66, 14, 208) 20%, transparent 70%);
+
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  padding-top: 15px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  border: 4px solid rgba(255,255,255,0.3);
+}
+
+.score-circle span{
+  font-size: 0.9rem;
+  display: block;
+  font-weight: normal;
+}
+/**********summary-card***********/
+.summary {
+  padding-left: 30px;
+  width:100%;
+  max-width: 320px;
+}
+.summary-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top:20px;
+
+}
+h3{
+  padding-top: 25px;
+  font-weight: 400px;
+  font-size:20px ;
+  line-height:100% ;
+}
+#red{
+  background-color: #FF55551A;
+  font-weight:400 ;
+  color:#FF5555E0;
+  font-size:18px;
+}
+#yellow{
+  background-color:#FFB21E1A;
+  font-weight:400 ;
+  color:#FFB21EE0;
+  font-size:18px;
+}
+#green{
+  background-color: #00FF001A;
+  font-weight:400 ;
+  color:#00FF00E0;
+  font-size:18px;
+}
+#purple{
+  background-color: #A700FF1A;
+  font-weight: 400 ;
+  color:#A700FFE0;
+  font-size:18px;
+}
+.summary-item span{
+  color: black;
+  font-weight: bold;
+}
+.btn{
+  background-color: #303B59;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+/**********media***********/
+@media (min-width: 769px) {
+  body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .card {
+    width: 738px;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  }
